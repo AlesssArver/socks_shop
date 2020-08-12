@@ -1,5 +1,6 @@
 import React from "react";
 
-export const Goods = () => {
+const Goods = () => {
   return <div>Goods</div>;
 };
+export default Goods;6
