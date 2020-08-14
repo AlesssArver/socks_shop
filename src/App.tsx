@@ -1,14 +1,16 @@
 import React from "react";
-import "./App.css";
-import { Home } from "pages/Home";
-import Goods from "pages/Goods";
+import { Route } from "react-router-dom";
 
+import { Header, Navbar } from "components";
+import { Goods, Home } from "pages";
 
 function App() {
   return (
     <div className="main__wrapper">
-      <Home />
-      <Goods />
+      <Header />
+      <Navbar />
+      <Route exact path="/" render={() => <Home />} />
+      <Route path="/goods" render={() => <Goods />} />
     </div>
   );
 }
